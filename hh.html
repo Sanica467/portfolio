@@ -1,0 +1,203 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Learning Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    nav h1 {
+      font-size: 24px;
+      color: #a71fab;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #a71fab;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 40px;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .hero img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #a71fab;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    /* Sections */
+    .section {
+      background: rgba(255, 255, 255, 0.08);
+      margin: 30px auto;
+      max-width: 900px;
+      padding: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+    }
+
+    .section h3 {
+      color: #a71fab;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card p {
+      font-size: 16px;
+    }
+
+    /* GitHub */
+    .github a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #a71fab;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    .github a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 600px) {
+      .hero-text h2 {
+        font-size: 28px;
+      }
+
+      .hero-text p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>My Portfolio</h1>
+    <div>
+      <a href="#courses">Courses</a>
+      <a href="#skills">Skills</a>
+      <a href="#github">GitHub</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <img src="pic/mypic.jpeg" alt="Your Photo" />
+    <div class="hero-text">
+      <h2>About Me</h2>
+      <p>
+       Hi! I’m Amal Sanica X, a passionate learner from St. Joseph’s Institute Of Technology. 
+       I enjoy exploring new technologies, solving problems, and improving my skills through 
+       hands-on projects and continuous learning. I believe in growing one step at a time.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="courses">
+    <h3>Courses Completed</h3>
+    <div class="grid">
+      <div class="card"><p>HTML 5</p></div>
+      <div class="card"><p>CSS 3</p></div>
+      <div class="card"><p>JavaScript</p></div>
+      <div class="card"><p>Java 11 Essentials</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <h3>Skills Learnt</h3>
+    <div class="grid">
+      <div class="card"><p>HTML5</p></div>
+      <div class="card"><p>CSS3</p></div>
+      <div class="card"><p>JavaScript</p></div>
+      <div class="card"><p>Problem Solving</p></div>
+      <div class="card"><p>Python</p></div>
+    </div>
+  </section>
+
+  <section class="section github" id="github">
+    <h3>GitHub Profile</h3>
+    <p>Explore my projects and learning progress:</p>
+    <a href="https://github.com/Sanica467" target="_blank">
+      github.com/Sanica467
+    </a>
+  </section>
+
+  <footer>
+    © 2026 Personal Learning Portfolio | Continuously Updated
+  </footer>
+
+</body>
+</html>
